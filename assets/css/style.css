@@ -1,0 +1,154 @@
+
+/* Global */
+
+html
+{
+ height:100%;
+ overflow:hidden;
+}
+
+body{
+    height:100%;
+}
+
+/* END */
+
+/* Utility */
+
+.center
+{
+    margin: 0 auto;
+}
+
+.base_size
+{
+    max-width:1080px;
+    width:100%;
+}
+
+.flex
+{
+    display:flex;
+}
+
+.totalWrapper
+{
+    align-items:center;
+    height:100%;
+}
+
+/* End Utility */
+
+/* name Bar */
+
+.nameBar
+{
+    border-bottom:20px solid #ffcc00;
+    border-right:20px solid #ffcc00;
+    border-top:20px solid #ffcc00;
+    height:75%;
+    position:relative;
+    width:35%;
+}
+
+.nameBar h1
+{
+    font-family: 'Dancing Script', cursive;
+    font-size:90px;
+    position:absolute;
+    top:20%;
+    right:-300px;
+}
+
+.nameBar h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+    font-weight: 100;
+    position:absolute;
+    right:-120px;
+    text-transform:uppercase;
+    top:45%;
+
+
+}
+
+/* End nameBar */
+
+/* Main Content */
+
+.mainContent
+{
+    height: 100%;
+    width:59%;
+}
+
+.itemHome
+{
+    align-items:flex-end;
+    justify-content:center;
+}
+
+.itemHome img
+{
+    max-width:100%;
+}
+
+.itemContent
+{
+    height:100%;
+    width:100%;
+}
+
+/* end Main Content */
+
+/* Main Navigation Menu */
+
+.navigationMenu
+{
+    width:6%;
+}
+
+.itemMenu
+{
+    align-items:center;
+    border:3px solid #ffce09;
+    box-sizing:border-box;
+    cursor:pointer;
+    justify-content:center;
+    list-style:none;
+    height:65px;
+    margin-bottom:35px;
+    -webkit-transition:transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transform: rotate(35deg);
+    width:80%;
+}
+
+.itemMenu i
+{
+    -webkit-transition:transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    font-size:1.40rem;
+    transform: rotate(325deg);
+}
+
+.itemMenu:hover
+{
+    transform: rotate(360deg);
+}
+
+.itemMenu:hover i
+{
+    transform: rotate(0deg);
+}
+
+
+
+/* end Navigation Menu */
