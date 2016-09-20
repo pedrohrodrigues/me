@@ -114,20 +114,20 @@ body{
 
 
 .rotateHome {
-    transform: translateZ( -1000px ) rotateY(    0deg );
+    transform: translateZ( 0px ) rotateY(    0deg );
 }
 
 .rotateAbout {
-    transform: translateZ( -1000px ) rotateX( -180deg );
+    transform: translateZ( -570px ) rotateX( -180deg );
 }
 
 
 .rotateSkills {
-    transform: translateZ( -1000px ) rotateY(  -90deg );
+    transform: translateZ( -570px ) rotateY(  -90deg );
 }
 
 .rotateContact{
-    transform: translateZ( -1000px ) rotateY(   90deg );
+    transform: translateZ( -570px ) rotateY(   90deg );
 }
 
 
@@ -150,14 +150,14 @@ body{
 {
     align-items:center;
     justify-content:flex-end;
-    transform: rotateX( 180deg ) translateZ( 1000px );
+    transform: rotateX( 180deg ) translateZ( 570px );
 }
 
 .itemSkills
 {
     align-items:center;
     justify-content:flex-end;
-    transform: rotateY(  90deg ) translateZ( 1000px );
+    transform: rotateY(  90deg ) translateZ( 570px );
 }
 
 
@@ -165,7 +165,7 @@ body{
 {
     align-items:center;
     justify-content:flex-end;
-    transform: rotateY( -90deg ) translateZ( 1000px );
+    transform: rotateY( -90deg ) translateZ( 570px );
 }
 
 
