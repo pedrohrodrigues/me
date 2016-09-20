@@ -19,12 +19,53 @@
           <!-- End Name Bar -->
           <!-- Begin Main content -->
         <section class="mainContent">
-            <div class="itemsWrapper">
+            <div class="itemsWrapper rotateHome">
                 <div class="itemHome itemContent flex">
                         <img src="assets/images/ilustration_me.png" />
                 </div>
                 <div class="itemAbout itemContent flex">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div class="contentAbout">
+                        <h3>Quem sou eu?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="itemSkills itemContent flex">
+                    <div class="contentSkills">
+                        <h3>Skills</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="itemSkills itemContent flex">
+                    <div class="contentSkills">
+                        <h3>Skills</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="itemContact itemContent flex">
+                    <div class="contentContact">
+                        <h3>Contact</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -39,11 +80,11 @@
                 <li class="itemMenu flex" data-rotate="About">
                     <i class="fa fa-desktop"></i>
                 </li>
-                <li class="itemMenu flex">
+                <li class="itemMenu flex" data-rotate="Skills">
                     <i class="fa fa-gamepad"></i>
                 </li>
-                <li class="itemMenu flex">
-                    <i class="fa fa-envelope"></i>
+                <li class="itemMenu flex" data-rotate="Contact">
+                    <i class="fa fa-envelope" ></i>
                 </li>
             </ul>
 
@@ -56,8 +97,10 @@
           {
               jQuery('.itemsWrapper').removeClass('rotateHome');
               jQuery('.itemsWrapper').removeClass('rotateAbout');
+              jQuery('.itemsWrapper').removeClass('rotateSkills');
+              jQuery('.itemsWrapper').removeClass('rotateContact');
           }
-          
+
         jQuery('.itemMenu').click(function(){
             eliminateRotate();
             jQuery('.itemsWrapper').addClass('rotate'+jQuery(this).data('rotate'));
