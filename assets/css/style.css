@@ -312,13 +312,12 @@ body{
     }
     
     .nameBar {
-        border:none;
         border-bottom: 15px solid #ffcc00;
         border-left: 15px solid #ffcc00;
         border-right: 15px solid #ffcc00;
         box-sizing: border-box;
         display:flex;
-        height: 193px;
+        height: 208px;
         justify-content: center;
         width: 100%;
     }
@@ -342,5 +341,17 @@ body{
         position: relative;
         right: inherit;
         top: inherit;
+    }
+}
+
+
+@media all and (max-width: 768px)
+{
+    .mainContent
+    {
+        height: 584px;
+    }
+    .itemHome img {
+        max-height: 550px;
     }
 }
