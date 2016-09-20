@@ -79,7 +79,7 @@ body{
 .mainContent
 {
     height: 100%;
-    perspective: 2000px;
+    perspective: 1000px;
     width:59%;
 }
 
@@ -92,7 +92,7 @@ body{
     -webkit-transform-style: preserve-3d;
     -ms-transition: transform 1s;
     -moz-transition: transform 1s;
-    -moz-transform: perspective(2000px);
+    -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transition: transform 1s;
@@ -114,20 +114,20 @@ body{
 
 
 .rotateHome {
-    transform: translateZ( -100px ) rotateY(    0deg );
+    transform: translateZ( -1000px ) rotateY(    0deg );
 }
 
 .rotateAbout {
-    transform: translateZ( -100px ) rotateX( -180deg );
+    transform: translateZ( -1000px ) rotateX( -180deg );
 }
 
 
 .rotateSkills {
-    transform: translateZ( -100px ) rotateY(  -90deg );
+    transform: translateZ( -1000px ) rotateY(  -90deg );
 }
 
 .rotateContact{
-    transform: translateZ( -100px ) rotateY(   90deg );
+    transform: translateZ( -1000px ) rotateY(   90deg );
 }
 
 
@@ -150,14 +150,14 @@ body{
 {
     align-items:center;
     justify-content:flex-end;
-    transform: rotateX( 180deg ) translateZ( 100px );
+    transform: rotateX( 180deg ) translateZ( 1000px );
 }
 
 .itemSkills
 {
     align-items:center;
     justify-content:flex-end;
-    transform: rotateY(  90deg ) translateZ( 100px );
+    transform: rotateY(  90deg ) translateZ( 1000px );
 }
 
 
@@ -165,9 +165,8 @@ body{
 {
     align-items:center;
     justify-content:flex-end;
-    transform: rotateY( -90deg ) translateZ( 100px );
+    transform: rotateY( -90deg ) translateZ( 1000px );
 }
-
 
 
 .contentAbout
