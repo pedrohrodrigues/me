@@ -35,6 +35,7 @@ body{
 .totalWrapper
 {
     align-items:center;
+    flex-wrap:wrap;
     height:100%;
 }
 
@@ -47,6 +48,7 @@ body{
     border-bottom:20px solid #ffcc00;
     border-right:20px solid #ffcc00;
     border-top:20px solid #ffcc00;
+    box-sizing: border-box;
     height:64%;
     position:relative;
     width:35%;
@@ -55,20 +57,21 @@ body{
 .nameBar h1
 {
     font-family: 'Dancing Script', cursive;
-    font-size:90px;
-    position:absolute;
-    top:20%;
-    right:-100px;
+    font-size: 90px;
+    position: absolute;
+    top: 20%;
+    right: -155px;
 }
 
-.nameBar h2
+.nameBar h1 .miniTitle
 {
-    font-size:50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
     font-weight: 300;
-    position:absolute;
-    right:-60px;
-    text-transform:uppercase;
-    top:45%;
+    position: absolute;
+    right: 40px;
+    text-transform: uppercase;
+
 }
 
 /* End nameBar */
@@ -149,14 +152,14 @@ body{
 .itemAbout
 {
     align-items:center;
-    justify-content:flex-end;
+    justify-content:center;
     transform: rotateX( 180deg ) translateZ( 570px );
 }
 
 .itemSkills
 {
     align-items:center;
-    justify-content:flex-end;
+    justify-content:center;
     transform: rotateY(  90deg ) translateZ( 570px );
 }
 
@@ -164,7 +167,7 @@ body{
 .itemContact
 {
     align-items:center;
-    justify-content:flex-end;
+    justify-content:center;
     transform: rotateY( -90deg ) translateZ( 570px );
 }
 
@@ -173,9 +176,9 @@ body{
 {
     background:url('../images/ilustration-head.png') #ffcc00 bottom right no-repeat;
     color:#FFFFFF;
-    height:60%;
-    padding:5%;
-    width:60%;
+    height: 80%;
+    padding: 3%;
+    width: 55%;
 }
 
 
@@ -183,9 +186,9 @@ body{
 {
     background:#000000;
     color:#FFFFFF;
-    height:60%;
-    padding:5%;
-    width:60%;
+    height: 80%;
+    padding: 3%;
+    width: 55%;
 }
 
 
@@ -193,14 +196,15 @@ body{
 {
     background:#15af61;
     color:#FFFFFF;
-    height:60%;
-    padding:5%;
-    width:60%;
+    height: 80%;
+    padding: 3%;
+    width: 55%;
 }
 
 .itemContent h3
 {
-    font-size:40px;
+    font-size: 80px;
+    margin:0;
 }
 
 .itemRotate
@@ -210,6 +214,16 @@ body{
 /* end Main Content */
 
 /* Main Navigation Menu */
+
+
+.mainMenu
+{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 8%;
+}
 
 .navigationMenu
 {
@@ -259,3 +273,74 @@ body{
 
 
 /* end Navigation Menu */
+
+
+@media all and (max-width: 1380px)
+{
+    .nameBar h1
+    {
+        top: 14%;
+    }
+
+    .mainContent
+    {
+        width:57%;
+    }
+
+    .navigationMenu
+    {
+        width:8%
+    }
+
+    .itemHome img
+    {
+        max-height: 650px;
+    }
+}
+
+
+@media all and (max-width: 1024px)
+{
+    html
+    {
+        overflow-y: visible;
+    }
+
+    .mainContent
+    {
+        width: 89%;
+    }
+    
+    .nameBar {
+        border:none;
+        border-bottom: 15px solid #ffcc00;
+        border-left: 15px solid #ffcc00;
+        border-right: 15px solid #ffcc00;
+        box-sizing: border-box;
+        display:flex;
+        height: 193px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nameBar h1
+    {
+        font-size: 75px;
+        left:inherit;
+        margin:0;
+        padding:0;
+        position:relative;
+        right: inherit;
+        top:inherit;
+
+    }
+
+    .nameBar h1 .miniTitle
+    {
+        left: 98px;
+        font-size: 40px;
+        position: relative;
+        right: inherit;
+        top: inherit;
+    }
+}
