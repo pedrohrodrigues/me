@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Oswald:300,400" rel="stylesheet">
+    <script src="assets/js/jquery-3.1.0.min.js"></script>
   </head>
   <body>
       <section class="totalWrapper flex">
@@ -18,19 +19,24 @@
           <!-- End Name Bar -->
           <!-- Begin Main content -->
         <section class="mainContent">
+            <div class="itemsWrapper">
                 <div class="itemHome itemContent flex">
                         <img src="assets/images/ilustration_me.png" />
                 </div>
+                <div class="itemAbout itemContent flex">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
         </section>
           <!-- End Main content -->
           <!-- Begin Navigation Menu -->
         <nav class="navigationMenu">
 
             <ul class="mainMenu">
-                <li class="itemMenu flex">
+                <li class="itemMenu flex" data-rotate="Home">
                     <i class="fa fa-home"></i>
                 </li>
-                <li class="itemMenu flex">
+                <li class="itemMenu flex" data-rotate="About">
                     <i class="fa fa-desktop"></i>
                 </li>
                 <li class="itemMenu flex">
@@ -44,5 +50,18 @@
         </nav>
           <!-- End Navigation Menu -->
       </section>
+
+      <script>
+          function eliminateRotate()
+          {
+              jQuery('.itemsWrapper').removeClass('rotateHome');
+              jQuery('.itemsWrapper').removeClass('rotateAbout');
+          }
+          
+        jQuery('.itemMenu').click(function(){
+            eliminateRotate();
+            jQuery('.itemsWrapper').addClass('rotate'+jQuery(this).data('rotate'));
+        });
+      </script>
   </body>
 </html>
