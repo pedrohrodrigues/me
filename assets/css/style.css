@@ -402,11 +402,11 @@ body{
 
 .mainMenu
 {
-    -webkit-animation: appear 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: appear 2s; /* Firefox < 16 */
-    -ms-animation: appear 2s; /* Internet Explorer */
-    -o-animation: appear 2s; /* Opera < 12.1 */
-    animation: appear 2s;
+    -webkit-animation: appear 2s ease; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: appear 2s ease; /* Firefox < 16 */
+    -ms-animation: appear 2s ease; /* Internet Explorer */
+    -o-animation: appear 2s ease; /* Opera < 12.1 */
+    animation: appear 2s ease;
 
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -504,13 +504,29 @@ body{
 {
     html
     {
-        height:inherit;
+        height:initial;
         overflow-y: visible;
+    }
+
+    .totalWrapper
+    {
+        height:initial;
     }
 
     .mainContent
     {
+        height:753px;
         width: 89%;
+    }
+
+    .contentAbout,.contentContact, .contentSkills
+    {
+        width:80%;
+    }
+
+    .navigationMenu
+    {
+        width:10%
     }
     
     .nameBar {
@@ -548,15 +564,13 @@ body{
         right: inherit;
         top: inherit;
     }
+
 }
 
 
 @media all and (max-width: 768px)
 {
-    .mainContent
-    {
-        height: 584px;
-    }
+
     .itemHome img {
         max-height: 550px;
     }
