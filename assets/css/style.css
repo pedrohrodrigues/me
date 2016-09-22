@@ -29,13 +29,18 @@ body{
 
 .flex
 {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
 .totalWrapper
 {
-    align-items:center;
-    flex-wrap:wrap;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
     height:100%;
 }
 
@@ -82,24 +87,28 @@ body{
 .mainContent
 {
     height: 100%;
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
     width:59%;
 }
 
 .itemsWrapper
 {
-    transform: translateZ( -100px );
+    -webkit-transform: translateZ( -100px );
+            transform: translateZ( -100px );
     height: 100%;
     position: relative;
-    -webkit-transition: transform 1s;
+    -webkit-transition: -webkit-transform 1s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: transform 1s;
     -moz-transition: transform 1s;
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+            transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     width:100%;
 
 }
@@ -107,7 +116,8 @@ body{
 
 .itemContent
 {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     height:100%;
     left: 0;
     position: absolute;
@@ -117,29 +127,38 @@ body{
 
 
 .rotateHome {
-    transform: translateZ( 0px ) rotateY(    0deg );
+    -webkit-transform: translateZ( 0px ) rotateY(    0deg );
+            transform: translateZ( 0px ) rotateY(    0deg );
 }
 
 .rotateAbout {
-    transform: translateZ( -570px ) rotateX( -180deg );
+    -webkit-transform: translateZ( -570px ) rotateX( -180deg );
+            transform: translateZ( -570px ) rotateX( -180deg );
 }
 
 
 .rotateSkills {
-    transform: translateZ( -570px ) rotateY(  -90deg );
+    -webkit-transform: translateZ( -570px ) rotateY(  -90deg );
+            transform: translateZ( -570px ) rotateY(  -90deg );
 }
 
 .rotateContact{
-    transform: translateZ( -570px ) rotateY(   90deg );
+    -webkit-transform: translateZ( -570px ) rotateY(   90deg );
+            transform: translateZ( -570px ) rotateY(   90deg );
 }
 
 
 .itemHome
 {
-    align-items:flex-end;
-    justify-content:center;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
     /* for firefox 31 */
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
     z-index: 2;
 
 }
@@ -151,24 +170,39 @@ body{
 
 .itemAbout
 {
-    align-items:center;
-    justify-content:center;
-    transform: rotateX( 180deg ) translateZ( 570px );
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-transform: rotateX( 180deg ) translateZ( 570px );
+            transform: rotateX( 180deg ) translateZ( 570px );
 }
 
 .itemSkills
 {
-    align-items:center;
-    justify-content:center;
-    transform: rotateY(  90deg ) translateZ( 570px );
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-transform: rotateY(  90deg ) translateZ( 570px );
+            transform: rotateY(  90deg ) translateZ( 570px );
 }
 
 
 .itemContact
 {
-    align-items:center;
-    justify-content:center;
-    transform: rotateY( -90deg ) translateZ( 570px );
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-transform: rotateY( -90deg ) translateZ( 570px );
+            transform: rotateY( -90deg ) translateZ( 570px );
 }
 
 
@@ -176,7 +210,7 @@ body{
 {
     background:url('../images/ilustration-head.png') #ffcc00 bottom right no-repeat;
     color:#FFFFFF;
-    height: 80%;
+    height: 85%;
     padding: 3%;
     width: 55%;
 }
@@ -185,18 +219,98 @@ body{
 .contentSkills
 {
     background:#000000;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
     color:#FFFFFF;
-    height: 80%;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    height: 85%;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     padding: 3%;
     width: 55%;
 }
 
+.skillsFields
+{
+    width:40%;
+}
+
+.skillsImage
+{
+    position:relative;
+    width:60%;
+}
+
+.skillsImage img
+{
+    max-width:100%;
+}
+
+.contentSkills h3
+{
+    width:100%;
+}
+
+.itemSkill
+{
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    box-sizing: border-box;
+    color:#FFFFFF;
+    height:68px;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    margin-bottom:10px;
+    width:80%;
+}
+
+.imgSkill
+{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.itemHtml5
+{
+    border-left:30px solid #dd9731;
+    background:#f3b55b;
+}
+
+.itemCss3
+{
+    border-left:30px solid #cd66a6;
+    background:#dfb0cd;
+}
+
+.itemJavascript
+{
+    border-left:30px solid #a5c851;
+    background:#c4df82;
+}
+
+.itemPHP
+{
+    border-left:30px solid #14cca8;
+    background:#3eebc9;
+}
+
+.itemDatabase
+{
+    border-left:30px solid #cb4949;
+    background:#ce7c7c;
+}
 
 .contentContact
 {
     background:#15af61;
     color:#FFFFFF;
-    height: 80%;
+    height: 85%;
     padding: 3%;
     width: 55%;
 }
@@ -209,7 +323,8 @@ body{
 
 .itemRotate
 {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 /* end Main Content */
 
@@ -218,10 +333,19 @@ body{
 
 .mainMenu
 {
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: 0 8%;
 }
 
@@ -232,42 +356,44 @@ body{
 
 .itemMenu
 {
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     border:3px solid #ffce09;
     box-sizing:border-box;
     cursor:pointer;
-    justify-content:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
     list-style:none;
     height:65px;
     margin-bottom:35px;
-    -webkit-transition:transform 0.5s ease;
-    -moz-transition: transform 0.5s ease;
-    -ms-transition: transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
+    -webkit-transition:-webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
-    transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
     width:80%;
 }
 
 .itemMenu i
 {
-    -webkit-transition:transform 0.5s ease;
-    -moz-transition: transform 0.5s ease;
-    -ms-transition: transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
+    -webkit-transition:-webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     font-size:1.40rem;
-    transform: rotate(325deg);
+    -webkit-transform: rotate(325deg);
+            transform: rotate(325deg);
 }
 
 .itemMenu:hover
 {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 .itemMenu:hover i
 {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 
@@ -316,9 +442,13 @@ body{
         border-left: 15px solid #ffcc00;
         border-right: 15px solid #ffcc00;
         box-sizing: border-box;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
         height: 208px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
     }
 
