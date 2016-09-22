@@ -50,6 +50,23 @@ body{
 
 .nameBar
 {
+
+    -moz-animation-name: showNameBar;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1.5s;
+
+    -webkit-animation-name: showNameBar;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1.5s;
+
+    animation-name: showNameBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+
+
     border-bottom:20px solid #ffcc00;
     border-right:20px solid #ffcc00;
     border-top:20px solid #ffcc00;
@@ -57,6 +74,8 @@ body{
     height:64%;
     position:relative;
     width:35%;
+
+
 }
 
 .nameBar h1
@@ -125,6 +144,10 @@ body{
     width:100%;
 }
 
+.itemContent h3
+{
+    font-weight: 300;
+}
 
 .rotateHome {
     -webkit-transform: translateZ( 0px ) rotateY(    0deg );
@@ -205,6 +228,60 @@ body{
             transform: rotateY( -90deg ) translateZ( 570px );
 }
 
+.itemContact h4
+{
+    font-size:48px;
+    font-weight:300;
+    text-align:center;
+    width:100%;
+}
+
+.socialMedia
+{
+    align-items:center;
+    justify-content:center;
+}
+
+.itemSocialMedia
+{
+    border:1px solid #FFFFFF;
+    border-radius:50%;
+    font-size:80px;
+    height:170px;
+    margin-right:40px;
+    width:170px;
+}
+
+.itemSocialMedia a
+{
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.contentContact
+{
+    background:#15af61;
+    color:#FFFFFF;
+    height: 85%;
+    padding: 3%;
+    width: 55%;
+}
+
+.contentContact .email p
+{
+    font-size:48px;
+    font-weight:300;
+    text-align:center;
+    width:100%;
+}
 
 .contentAbout
 {
@@ -306,14 +383,6 @@ body{
     background:#ce7c7c;
 }
 
-.contentContact
-{
-    background:#15af61;
-    color:#FFFFFF;
-    height: 85%;
-    padding: 3%;
-    width: 55%;
-}
 
 .itemContent h3
 {
@@ -333,6 +402,12 @@ body{
 
 .mainMenu
 {
+    -webkit-animation: appear 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: appear 2s; /* Firefox < 16 */
+    -ms-animation: appear 2s; /* Internet Explorer */
+    -o-animation: appear 2s; /* Opera < 12.1 */
+    animation: appear 2s;
+
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -485,4 +560,60 @@ body{
     .itemHome img {
         max-height: 550px;
     }
+}
+
+
+@-moz-keyframes showNameBar {
+    0% {
+        -moz-transform: translateX(-360px);
+    }
+    100% {
+        -moz-transform: translateX(0);
+    }
+}
+@-webkit-keyframes showNameBar {
+    0% {
+        -webkit-transform: translateX(-360px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes showNameBar {
+    0% {
+        transform: translateX(-360px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
