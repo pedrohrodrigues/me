@@ -3,6 +3,7 @@
 
 html
 {
+ font-size:14px;
  height:100%;
  overflow:hidden;
 }
@@ -132,8 +133,34 @@ body{
 
 }
 
+.containerInnerTitle
+{
+    width:100%;
+}
 
-.itemContent
+.lineDot
+{
+    align-items:center;
+    width:5%;
+}
+
+.lineDot .line
+{
+    background: #FFFFFF;
+    height: 2px;
+    width: 15px;
+}
+
+.lineDot .dot
+{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+
+.containerContent
 {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -144,9 +171,15 @@ body{
     width:100%;
 }
 
-.itemContent h3
+.containerContent h3
 {
+    align-items:center;
     font-weight: 300;
+}
+
+.containerContent p
+{
+    padding:0 3%;
 }
 
 .rotateHome {
@@ -270,9 +303,6 @@ body{
 {
     background:#15af61;
     color:#FFFFFF;
-    height: 85%;
-    padding: 3%;
-    width: 55%;
 }
 
 .contentContact .email p
@@ -287,11 +317,15 @@ body{
 {
     background:url('../images/ilustration-head.png') #ffcc00 bottom right no-repeat;
     color:#FFFFFF;
-    height: 85%;
-    padding: 3%;
-    width: 55%;
+
 }
 
+.itemContent
+{
+    height: 85%;
+    padding: 3% 0%;
+    width: 61%;
+}
 
 .contentSkills
 {
@@ -302,12 +336,9 @@ body{
     color:#FFFFFF;
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
-    height: 85%;
     -webkit-box-pack:justify;
         -ms-flex-pack:justify;
             justify-content:space-between;
-    padding: 3%;
-    width: 55%;
 }
 
 .skillsFields
@@ -384,7 +415,7 @@ body{
 }
 
 
-.itemContent h3
+.containerContent h3
 {
     font-size: 80px;
     margin:0;
@@ -480,7 +511,7 @@ body{
 {
     .nameBar h1
     {
-        top: 14%;
+        top:6%;
     }
 
     .mainContent
@@ -497,6 +528,29 @@ body{
     {
         max-height: 650px;
     }
+
+    .containerContent h3
+    {
+        font-size:60px;
+    }
+
+    .itemSocialMedia
+    {
+        font-size:55px;
+        height:100px;
+        width:100px;
+    }
+
+    .itemContact h4
+    {
+        font-size:40px;
+    }
+
+    .contentContact .email p
+    {
+        font-size: 35px;
+    }
+
 }
 
 
@@ -519,7 +573,7 @@ body{
         width: 89%;
     }
 
-    .contentAbout,.contentContact, .contentSkills
+    .itemContent
     {
         width:80%;
     }
