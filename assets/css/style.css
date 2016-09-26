@@ -674,9 +674,38 @@ html
  @media all and (max-width: 768px)
  {
 
-        .itemHome img {
+     .nameBar
+     {
+         order:1;
+     }
+
+     .navigationMenu
+     {
+         order:2;
+         width:100%;
+     }
+
+     .mainMenu
+     {
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 5% 8% 0 8%;
+     }
+
+     .mainContent
+     {
+         order:3;
+         width:100%;
+     }
+
+     .itemContent
+     {
+         width:95%
+     }
+
+     .itemHome img {
         max-height: 550px;
-        }
+     }
 
      .nameBar h1 {
          font-size: calc(3.5em + 1vw);
