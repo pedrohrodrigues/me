@@ -3,7 +3,7 @@
 
 html
 {
- font-size:14px;
+ font-size:100%;
  height:100%;
  overflow:hidden;
 }
@@ -13,6 +13,10 @@ body{
     height:100%;
 }
 
+p
+{
+    font-size: calc(0.6em + 0.5vw);
+}
 /* END */
 
 /* Utility */
@@ -82,7 +86,7 @@ body{
 .nameBar h1
 {
     font-family: 'Dancing Script', cursive;
-    font-size: 90px;
+    font-size:calc(4.5em + 1vw);
     position: absolute;
     top: 20%;
     right: -155px;
@@ -91,7 +95,7 @@ body{
 .nameBar h1 .miniTitle
 {
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size:calc(0.4em + 1vw);
     font-weight: 300;
     position: absolute;
     right: 40px;
@@ -307,8 +311,9 @@ body{
 
 .contentContact .email p
 {
-    font-size:48px;
+    font-size:calc(2.2em + 0.5vw);
     font-weight:300;
+    padding: 0;
     text-align:center;
     width:100%;
 }
@@ -329,7 +334,7 @@ body{
 
 .contentSkills
 {
-    background:#000000;
+    background:#373535;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -379,14 +384,32 @@ body{
 
 .imgSkill
 {
+    position:relative;
+    right:0;
+    top:0;
+}
+
+.yodaSkills
+{
     position:absolute;
     right:0;
     top:0;
 }
 
+.imageBackgroundSkill
+{
+    height:56px;
+    width:100%;
+}
+
 .itemHtml5
 {
     border-left:30px solid #dd9731;
+    background:#f3b55b;
+}
+
+.backgroundItemHtml5
+{
     background:#f3b55b;
 }
 
@@ -396,9 +419,19 @@ body{
     background:#dfb0cd;
 }
 
+.backgroundItemCss3
+{
+    background:#dfb0cd;
+}
+
 .itemJavascript
 {
     border-left:30px solid #a5c851;
+    background:#c4df82;
+}
+
+.backgroundItemJavascript
+{
     background:#c4df82;
 }
 
@@ -408,16 +441,27 @@ body{
     background:#3eebc9;
 }
 
+.backgroundItemPHP
+{
+    background:#3eebc9;
+}
+
 .itemDatabase
 {
     border-left:30px solid #cb4949;
     background:#ce7c7c;
 }
 
+.backgroundItemDatabase
+{
+    background:#ce7c7c;
+}
+
+
 
 .containerContent h3
 {
-    font-size: 80px;
+    font-size: calc(3.5em + 1vw);
     margin:0;
 }
 
@@ -478,7 +522,7 @@ body{
     transition: transform 0.5s ease;
     -webkit-transform: rotate(35deg);
             transform: rotate(35deg);
-    width:80%;
+    width:65px;
 }
 
 .itemMenu i
@@ -509,9 +553,14 @@ body{
 
 @media all and (max-width: 1380px)
 {
+    html
+    {
+        font-size:90%;
+    }
+
     .nameBar h1
     {
-        top:6%;
+        top:16%;
     }
 
     .mainContent
@@ -531,138 +580,143 @@ body{
 
     .containerContent h3
     {
-        font-size:60px;
+        /* font-size:60px; */
     }
 
     .itemSocialMedia
     {
-        font-size:55px;
+        /* font-size:55px; */
         height:100px;
         width:100px;
     }
 
     .itemContact h4
     {
-        font-size:40px;
-    }
+    /*  font-size:40px; */
+ }
 
-    .contentContact .email p
-    {
-        font-size: 35px;
-    }
+ .contentContact .email p
+ {
+    /* font-size: 35px; */
+ }
 
 }
 
 
 @media all and (max-width: 1024px)
 {
-    html
-    {
-        height:initial;
-        overflow-y: visible;
-    }
-
-    .totalWrapper
-    {
-        height:initial;
-    }
-
-    .mainContent
-    {
-        height:753px;
-        width: 89%;
-    }
-
-    .itemContent
-    {
-        width:80%;
-    }
-
-    .navigationMenu
-    {
-        width:10%
-    }
-    
-    .nameBar {
-        border-bottom: 15px solid #ffcc00;
-        border-left: 15px solid #ffcc00;
-        border-right: 15px solid #ffcc00;
-        box-sizing: border-box;
-        display:-webkit-box;
-        display:-ms-flexbox;
-        display:flex;
-        height: 208px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        width: 100%;
-    }
-
-    .nameBar h1
-    {
-        font-size: 75px;
-        left:inherit;
-        margin:0;
-        padding:0;
-        position:relative;
-        right: inherit;
-        top:inherit;
-
-    }
-
-    .nameBar h1 .miniTitle
-    {
-        left: 98px;
-        font-size: 40px;
-        position: relative;
-        right: inherit;
-        top: inherit;
-    }
-
-}
-
-
-@media all and (max-width: 768px)
+html
 {
+   height:initial;
+   overflow-y: visible;
+}
 
-    .itemHome img {
+.totalWrapper
+{
+   height:initial;
+}
+
+.mainContent
+{
+   height:753px;
+   width: 89%;
+}
+
+.itemContent
+{
+   width:80%;
+}
+
+.navigationMenu
+{
+   width:10%
+}
+
+.nameBar {
+   border-bottom: 15px solid #ffcc00;
+   border-left: 15px solid #ffcc00;
+   border-right: 15px solid #ffcc00;
+   box-sizing: border-box;
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   height: 208px;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   width: 100%;
+}
+
+.nameBar h1
+{
+    /* font-size: 75px; */
+   left:inherit;
+   margin:0;
+   padding:0;
+   position:relative;
+   right: inherit;
+   top:inherit;
+
+}
+
+.nameBar h1 .miniTitle
+{
+   left: 98px;
+    /* font-size: 40px; */
+    position: relative;
+    right: inherit;
+    top: inherit;
+ }
+
+ }
+
+
+ @media all and (max-width: 768px)
+ {
+
+        .itemHome img {
         max-height: 550px;
-    }
-}
+        }
+
+     .nameBar h1 {
+         font-size: calc(3.5em + 1vw);
+     }
+
+ }
 
 
-@-moz-keyframes showNameBar {
-    0% {
-        -moz-transform: translateX(-360px);
-    }
-    100% {
-        -moz-transform: translateX(0);
-    }
-}
-@-webkit-keyframes showNameBar {
-    0% {
-        -webkit-transform: translateX(-360px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-    }
-}
-@keyframes showNameBar {
-    0% {
-        transform: translateX(-360px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+ @-moz-keyframes showNameBar {
+ 0% {
+    -moz-transform: translateX(-360px);
+ }
+ 100% {
+    -moz-transform: translateX(0);
+ }
+ }
+ @-webkit-keyframes showNameBar {
+ 0% {
+    -webkit-transform: translateX(-360px);
+ }
+ 100% {
+    -webkit-transform: translateX(0);
+ }
+ }
+ @keyframes showNameBar {
+ 0% {
+    transform: translateX(-360px);
+ }
+ 100% {
+    transform: translateX(0);
+ }
+ }
 
 
-@keyframes appear {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+ @keyframes appear {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+ }
 
-/* Firefox < 16 */
+ /* Firefox < 16 */
 @-moz-keyframes appear {
     from { opacity: 0; }
     to   { opacity: 1; }
