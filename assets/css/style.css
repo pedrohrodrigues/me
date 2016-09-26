@@ -88,7 +88,7 @@ p
     font-family: 'Dancing Script', cursive;
     font-size:calc(4.5em + 1vw);
     position: absolute;
-    top: 20%;
+    top: 18%;
     right: -155px;
 }
 
@@ -145,7 +145,7 @@ p
 .lineDot
 {
     align-items:center;
-    width:5%;
+    width:8%;
 }
 
 .lineDot .line
@@ -283,7 +283,7 @@ p
 {
     border:1px solid #FFFFFF;
     border-radius:50%;
-    font-size:80px;
+    font-size: calc(4.5em + 1vw);
     height:170px;
     margin-right:40px;
     width:170px;
@@ -470,6 +470,13 @@ p
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
 }
+
+.coffeeContact
+{
+    font-size:calc(3.5em + 1vw);
+    justify-content:center;
+    width:100%;
+}
 /* end Main Content */
 
 /* Main Navigation Menu */
@@ -578,27 +585,11 @@ p
         max-height: 650px;
     }
 
-    .containerContent h3
-    {
-        /* font-size:60px; */
-    }
-
     .itemSocialMedia
     {
-        /* font-size:55px; */
         height:100px;
         width:100px;
     }
-
-    .itemContact h4
-    {
-    /*  font-size:40px; */
- }
-
- .contentContact .email p
- {
-    /* font-size: 35px; */
- }
 
 }
 
@@ -649,7 +640,6 @@ html
 
 .nameBar h1
 {
-    /* font-size: 75px; */
    left:inherit;
    margin:0;
    padding:0;
@@ -662,7 +652,6 @@ html
 .nameBar h1 .miniTitle
 {
    left: 98px;
-    /* font-size: 40px; */
     position: relative;
     right: inherit;
     top: inherit;
@@ -700,8 +689,8 @@ html
 
      .itemMenu
      {
-         height:55px;
-         width:55px;
+         height:50px;
+         width:50px;
      }
 
      .itemContent
@@ -719,7 +708,7 @@ html
      }
 
      .nameBar h1 {
-         font-size: calc(3.5em + 1vw);
+         font-size: calc(3.2em + 1vw);
      }
 
  }
