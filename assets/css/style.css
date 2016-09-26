@@ -698,9 +698,20 @@ html
          width:100%;
      }
 
+     .itemMenu
+     {
+         height:55px;
+         width:55px;
+     }
+
      .itemContent
      {
          width:95%
+     }
+
+     .itemHome
+     {
+         align-items: flex-start;
      }
 
      .itemHome img {
