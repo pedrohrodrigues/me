@@ -269,6 +269,7 @@ p
 {
     font-size:48px;
     font-weight:300;
+    margin:20px 0 43px 0;
     text-align:center;
     width:100%;
 }
@@ -587,8 +588,16 @@ p
 
     .itemSocialMedia
     {
-        height:100px;
-        width:100px;
+        font-size: calc(4.0em + 1vw);
+        height:90px;
+        width:90px;
+    }
+
+    .itemContact h4
+    {
+
+        margin:15px 0 23px 0;
+
     }
 
 }
@@ -663,6 +672,11 @@ html
  @media all and (max-width: 768px)
  {
 
+     p
+     {
+         font-size: calc(0.8em + 0.5vw);
+     }
+
      .nameBar
      {
          order:1;
@@ -704,7 +718,7 @@ html
      }
 
      .itemHome img {
-        max-height: 550px;
+        max-height: 500px;
      }
 
      .nameBar h1 {
