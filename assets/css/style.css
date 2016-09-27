@@ -672,14 +672,31 @@ html
  @media all and (max-width: 768px)
  {
 
+     .mainContent
+     {
+         height:500px;
+         width: 89%;
+     }
+
+
      p
      {
-         font-size: calc(0.8em + 0.5vw);
+         font-size: calc(0.9em + 0.5vw);
+     }
+
+     .contentAbout
+     {
+         background-image:none;
      }
 
      .nameBar
      {
          order:1;
+     }
+
+     .nameBar h1 .miniTitle
+     {
+         left:85px;
      }
 
      .navigationMenu
@@ -701,6 +718,8 @@ html
          width:100%;
      }
 
+
+
      .itemMenu
      {
          height:50px;
@@ -718,11 +737,20 @@ html
      }
 
      .itemHome img {
-        max-height: 500px;
+        max-height: 430px;
      }
 
      .nameBar h1 {
          font-size: calc(3.2em + 1vw);
+     }
+
+     .containerContent h3 {
+         font-size: calc(3.2em + 1vw);
+     }
+
+     .contentContact .email p
+     {
+         font-size: calc(1.6em + 0.5vw);
      }
 
  }
