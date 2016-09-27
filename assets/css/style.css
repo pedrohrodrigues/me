@@ -609,6 +609,7 @@ html
 {
    height:initial;
    overflow-y: visible;
+   overflow-x: hidden;
 }
 
 .totalWrapper
@@ -678,6 +679,10 @@ html
          width: 89%;
      }
 
+     .nameBar h1 .miniTitle
+     {
+         left: 76px;
+     }
 
      p
      {
@@ -691,13 +696,11 @@ html
 
      .nameBar
      {
+         height:148px;
          order:1;
      }
 
-     .nameBar h1 .miniTitle
-     {
-         left:85px;
-     }
+
 
      .navigationMenu
      {
@@ -741,11 +744,11 @@ html
      }
 
      .nameBar h1 {
-         font-size: calc(3.2em + 1vw);
+         font-size: calc(3em + 1vw);
      }
 
      .containerContent h3 {
-         font-size: calc(3.2em + 1vw);
+         font-size: calc(3em + 1vw);
      }
 
      .contentContact .email p
