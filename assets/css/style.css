@@ -672,6 +672,11 @@ html
          width: 89%;
      }
 
+
+     .nameBar h1 {
+         font-size: calc(2.7em + 1vw);
+     }
+
      .nameBar h1 .miniTitle
      {
          left: 76px;
@@ -729,13 +734,18 @@ html
          align-items: flex-start;
      }
 
+     .itemSocialMedia
+     {
+         font-size: calc(3.5em + 1vw);
+         height: 75px;
+         width: 75px;
+     }
+
      .itemHome img {
         max-height: 430px;
      }
 
-     .nameBar h1 {
-         font-size: calc(3em + 1vw);
-     }
+
 
      .containerContent h3 {
          font-size: calc(3em + 1vw);
