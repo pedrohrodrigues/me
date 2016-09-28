@@ -586,31 +586,24 @@ p
         max-height: 650px;
     }
 
-    .itemSocialMedia
-    {
-        font-size: calc(4.0em + 1vw);
-        height:90px;
-        width:90px;
-    }
-
-    .itemContact h4
-    {
-
-        margin:15px 0 23px 0;
-
-    }
-
 }
 
 
 @media all and (max-width: 1024px)
 {
+
+
 html
 {
    height:initial;
    overflow-y: visible;
    overflow-x: hidden;
 }
+
+    p
+    {
+        font-size: calc(0.9em + 0.5vw);
+    }
 
 .totalWrapper
 {
@@ -684,10 +677,7 @@ html
          left: 76px;
      }
 
-     p
-     {
-         font-size: calc(0.9em + 0.5vw);
-     }
+
 
      .contentAbout
      {
