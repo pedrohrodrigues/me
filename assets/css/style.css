@@ -588,12 +588,12 @@ p
     border:3px solid #ffce09;
 }
 
-.itemMenu.menuSkill:hover
+.itemMenu.menuLiSkill:hover
  {
      border:3px solid #373535;
  }
 
-.itemMenu.menuContact:hover
+.itemMenu.menuLiContact:hover
 {
     border:3px solid #15af61;
 }
@@ -637,17 +637,12 @@ p
     background:#ffcc00;
 }
 
-.menuSkill .itemMenuTitle .lineDot .line, .menuSkill .itemMenuTitle .lineDot .dot
+.menuLiSkill .itemMenuTitle .lineDot .line, .menuLiSkill .itemMenuTitle .lineDot .dot
 {
     background:#373535;
 }
 
-.menuContact .itemMenuTitle .lineDot
-{
-
-}
-
-.menuContact .itemMenuTitle .lineDot .line, .menuContact .itemMenuTitle .lineDot .dot
+.menuLiContact .itemMenuTitle .lineDot .line, .menuLiContact .itemMenuTitle .lineDot .dot
 {
     background:#15af61;
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77be30d5-de01-469c-9e32-8baf99eebaf5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -29,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="127" column="50" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="50" />
+            <state relative-caret-position="404">
+              <caret line="137" column="47" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -39,8 +38,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="585" column="25" selection-start-line="585" selection-start-column="25" selection-end-line="585" selection-end-column="25" />
+            <state relative-caret-position="217">
+              <caret line="642" column="1" selection-start-line="642" selection-start-column="1" selection-end-line="642" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -173,12 +172,12 @@
       <workItem from="1475187432472" duration="1000" />
       <workItem from="1475194683272" duration="3000" />
       <workItem from="1475501529068" duration="2538000" />
-      <workItem from="1475518067822" duration="2287000" />
+      <workItem from="1475518067822" duration="3113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63135000" />
+    <option name="totallyTimeSpent" value="63961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="217" y="41" width="1146" height="895" extended-state="0" />
@@ -261,16 +260,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="127" column="50" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="50" />
+        <state relative-caret-position="404">
+          <caret line="137" column="47" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="585" column="25" selection-start-line="585" selection-start-column="25" selection-end-line="585" selection-end-column="25" />
+        <state relative-caret-position="217">
+          <caret line="642" column="1" selection-start-line="642" selection-start-column="1" selection-end-line="642" selection-end-column="1" />
           <folding />
         </state>
       </provider>
