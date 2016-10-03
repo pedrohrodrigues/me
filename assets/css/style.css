@@ -583,10 +583,99 @@ p
             transform: rotate(360deg);
 }
 
+.mainMenu .itemMenu:hover
+{
+    border:3px solid #ffce09;
+}
+
+.itemMenu.menuSkill:hover
+ {
+     border:3px solid #373535;
+ }
+
+.itemMenu.menuContact:hover
+{
+    border:3px solid #15af61;
+}
+
 .itemMenu:hover i
 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+}
+
+.itemMenu:hover .itemMenuTitle
+{
+    display:block;
+}
+
+.itemMenuTitle
+{
+    border-radius:50px;
+    display:none;
+    left: -115px;
+    padding: 1px 20px;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.itemMenuTitle .lineDot
+{
+    position: absolute;
+    right: -76px;
+    top: 7px;
+    width: 100%;
+}
+
+.itemMenuTitle .lineDot .line
+{
+    background:#ffcc00;
+}
+
+.itemMenuTitle .lineDot .dot
+{
+    background:#ffcc00;
+}
+
+.menuSkill .itemMenuTitle .lineDot .line, .menuSkill .itemMenuTitle .lineDot .dot
+{
+    background:#373535;
+}
+
+.menuContact .itemMenuTitle .lineDot
+{
+
+}
+
+.menuContact .itemMenuTitle .lineDot .line, .menuContact .itemMenuTitle .lineDot .dot
+{
+    background:#15af61;
+}
+
+
+
+
+
+.aboutMenuTitle, .homeMenuTitle
+{
+    border: 1px solid #ffcc00;
+}
+
+
+.skillsMenuTitle
+{
+    border: 1px solid #373535;
+}
+
+.itemMenuTitle.contactMenuTitle .lineDot
+{
+    right: -89px;
+}
+
+.contactMenuTitle.itemMenuTitle
+{
+    border: 1px solid #15af61;
+    left: -133px;
 }
 
 
@@ -634,6 +723,12 @@ html
    overflow-y: visible;
    overflow-x: hidden;
 }
+
+    .itemMenu:hover .itemMenuTitle
+    {
+        display:none;
+    }
+
 
     p
     {
