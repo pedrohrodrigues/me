@@ -133,9 +133,29 @@
               jQuery('.itemsWrapper').removeClass('rotateContact');
           }
 
+          function eliminateMenu()
+          {
+              jQuery('.mainMenu').removeClass('menuHome');
+              jQuery('.mainMenu').removeClass('menuAbout');
+              jQuery('.mainMenu').removeClass('menuSkills');
+              jQuery('.mainMenu').removeClass('menuContact');
+          }
+
+          function eliminateNameBar()
+          {
+              jQuery('.nameBar').removeClass('nameHome');
+              jQuery('.nameBar').removeClass('nameAbout');
+              jQuery('.nameBar').removeClass('nameSkills');
+              jQuery('.nameBar').removeClass('nameContact');
+          }
+
         jQuery('.itemMenu').click(function(){
             eliminateRotate();
+            eliminateMenu();
+            eliminateNameBar();
             jQuery('.itemsWrapper').addClass('rotate'+jQuery(this).data('rotate'));
+            jQuery('.mainMenu').addClass('menu'+jQuery(this).data('rotate'));
+            jQuery('.nameBar').addClass('name'+jQuery(this).data('rotate'));
         });
       </script>
   </body>
