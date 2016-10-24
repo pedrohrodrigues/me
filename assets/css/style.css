@@ -75,9 +75,9 @@ p
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
 
-    border-bottom: 20px solid #ffcc00;
-    border-right: 20px solid #ffcc00;
-    border-top: 20px solid #ffcc00;
+    border-bottom: 20px solid #ffbc00;
+    border-right: 20px solid #ffbc00;
+    border-top: 20px solid #ffbc00;
     box-sizing: border-box;
     -webkit-transition: border 0.5s ease;
             transition: border 0.5s ease;
@@ -354,7 +354,7 @@ p
 
 .contentAbout
 {
-    background:url('../images/ilustration-head.png') #ffcc00 bottom right no-repeat;
+    background:url('../images/ilustration-head.png') #ffbc00 bottom right no-repeat;
     color:#FFFFFF;
 
 }
@@ -370,11 +370,37 @@ p
 {
     background:#373535;
     color:#FFFFFF;
+    flex-wrap:wrap;
+}
+
+.mySkills
+{
+    box-sizing: border-box;
+    flex-wrap:wrap;
+    height:70%;
+    padding:0 14%;
+    width: 100%;
+}
+
+.itemMySkills
+{
+    text-align:center;
+    width:33%;
+}
+
+.itemMySkills .fa
+{
+    font-size: 4.5rem;
 }
 
 .skillsFields
 {
     width:40%;
+}
+
+.itemSkills
+{
+    color:#FFFFFF;
 }
 
 .skillsImage
@@ -629,12 +655,12 @@ p
 
 .itemMenuTitle .lineDot .line
 {
-    background:#ffcc00;
+    background:#ffbc00;
 }
 
 .itemMenuTitle .lineDot .dot
 {
-    background:#ffcc00;
+    background:#ffbc00;
 }
 
 .menuLiSkill .itemMenuTitle .lineDot .line, .menuLiSkill .itemMenuTitle .lineDot .dot
@@ -653,7 +679,7 @@ p
 
 .aboutMenuTitle, .homeMenuTitle
 {
-    border: 1px solid #ffcc00;
+    border: 1px solid #ffbc00;
 }
 
 
@@ -752,9 +778,9 @@ html
 }
 
 .nameBar {
-   border-bottom: 15px solid #ffcc00;
-   border-left: 15px solid #ffcc00;
-   border-right: 15px solid #ffcc00;
+   border-bottom: 15px solid #ffbc00;
+   border-left: 15px solid #ffbc00;
+   border-right: 15px solid #ffbc00;
    box-sizing: border-box;
    display:-webkit-box;
    display:-ms-flexbox;
