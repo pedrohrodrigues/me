@@ -90,16 +90,14 @@ p
 
 .nameBar.nameSkills
 {
-    border-bottom:20px solid #373535;
-    border-right:20px solid #373535;
-    border-top:20px solid #373535;
+    border:20px solid #373535;
+
 }
 
 .nameBar.nameContact
 {
-    border-bottom:20px solid #15af61;
-    border-right:20px solid #15af61;
-    border-top:20px solid #15af61;
+    border:20px solid #15af61;
+
 }
 
 .nameBar h1
