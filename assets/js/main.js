@@ -1,3 +1,38 @@
+          
+          var itensMenu = document.getElementsByClassName("itemMenu");
+          function changeMenu(menuSelecionado)
+          {
+            var rotateAttr= menuSelecionado.dataset.rotate
+            eliminateRotate();
+            eliminateMenu();
+            eliminateNameBar();
+            jQuery('.itemsWrapper').addClass('rotate'+rotateAttr);
+            jQuery('.mainMenu').addClass('menu'+rotateAttr);
+            jQuery('.nameBar').addClass('name'+rotateAttr);     
+          }
+
+
+          //Coloca as funcoes em cada click do menu
+          function addClickOnMenu(){
+            for(var i=0; i<itensMenu.length;i++)
+            {
+              (function () {
+                  
+                  var menuSelecionado = itensMenu[i];
+
+                  itensMenu[i].addEventListener('click', function()
+                  {
+                      
+                      changeMenu(menuSelecionado)
+
+                  },false);
+
+              }());
+            }          
+         }
+
+         addClickOnMenu();
+
           function eliminateRotate()
           {
               jQuery('.itemsWrapper').removeClass('rotateHome');
@@ -22,34 +57,10 @@
               jQuery('.nameBar').removeClass('nameContact');
           }
 
-          var itensMenu = document.getElementsByClassName("itemMenu");
-
-          function changeMenu(menuSelecionado)
-          {
-            var rotateAttr= menuSelecionado.dataset.rotate
-            eliminateRotate();
-            eliminateMenu();
-            eliminateNameBar();
-            jQuery('.itemsWrapper').addClass('rotate'+rotateAttr);
-            jQuery('.mainMenu').addClass('menu'+rotateAttr);
-            jQuery('.nameBar').addClass('name'+rotateAttr);     
-          }
 
 
-          //Coloca as funcoes em cada click do menu
-          for(var i=0; i<itensMenu.length;i++)
-          {
-            (function () {
-                
-                var menuSelecionado = itensMenu[i];
 
-                itensMenu[i].addEventListener('click', function()
-                {
-                    
-                    changeMenu(menuSelecionado)
 
-                },false);
 
-            }());
-         }
+
 

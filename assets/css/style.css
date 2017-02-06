@@ -91,13 +91,14 @@ p
 .nameBar.nameSkills
 {
     border:20px solid #373535;
+    border-left:none;
 
 }
 
 .nameBar.nameContact
 {
     border:20px solid #15af61;
-
+    border-left:none;
 }
 
 .nameBar h1
@@ -808,6 +809,16 @@ html
     right: inherit;
     top: inherit;
  }
+
+
+.nameBar.nameSkills {
+    border: 20px solid #373535;
+}
+
+.nameBar.nameContact {
+    border: 20px solid #15af61;
+}
+
 
  }
 
