@@ -1,11 +1,15 @@
           
-          var itensMenu = document.getElementsByClassName("itemMenu");
+          var itemsMenu = document.getElementsByClassName("itemMenu");
+          var classesRotate =['rotateHome','rotateAbout','rotateSkills','rotateContact'];
+          var classesMenu =['menuHome','menuAbout','menuSkills','menuContact'];
+          var classesNameBar =['nameHome','nameAbout','nameSkills','nameContact'];
+          
           function changeMenu(menuSelecionado)
           {
             var rotateAttr= menuSelecionado.dataset.rotate
-            eliminateRotate();
-            eliminateMenu();
-            eliminateNameBar();
+            removeManyClasses('itemsWrapper',classesRotate);
+            removeManyClasses('mainMenu',classesMenu);
+            removeManyClasses('nameBar',classesNameBar);
             jQuery('.itemsWrapper').addClass('rotate'+rotateAttr);
             jQuery('.mainMenu').addClass('menu'+rotateAttr);
             jQuery('.nameBar').addClass('name'+rotateAttr);     
@@ -14,13 +18,13 @@
 
           //Coloca as funcoes em cada click do menu
           function addClickOnMenu(){
-            for(var i=0; i<itensMenu.length;i++)
+            for(var i=0; i<itemsMenu.length;i++)
             {
               (function () {
                   
-                  var menuSelecionado = itensMenu[i];
+                  var menuSelecionado = itemsMenu[i];
 
-                  itensMenu[i].addEventListener('click', function()
+                  itemsMenu[i].addEventListener('click', function()
                   {
                       
                       changeMenu(menuSelecionado)
@@ -31,30 +35,18 @@
             }          
          }
 
-         addClickOnMenu();
+        addClickOnMenu();
 
-          function eliminateRotate()
+        function removeManyClasses(classOfOrigin,classesToRemove)
           {
-              jQuery('.itemsWrapper').removeClass('rotateHome');
-              jQuery('.itemsWrapper').removeClass('rotateAbout');
-              jQuery('.itemsWrapper').removeClass('rotateSkills');
-              jQuery('.itemsWrapper').removeClass('rotateContact');
-          }
 
-          function eliminateMenu()
-          {
-              jQuery('.mainMenu').removeClass('menuHome');
-              jQuery('.mainMenu').removeClass('menuAbout');
-              jQuery('.mainMenu').removeClass('menuSkills');
-              jQuery('.mainMenu').removeClass('menuContact');
-          }
+            for(var i=0; i<classesToRemove.length;i++)
+            {
+              console.log(classOfOrigin);
+              console.log(classesToRemove[i]);
+              jQuery('.'+classOfOrigin).removeClass(classesToRemove[i]);
+            }
 
-          function eliminateNameBar()
-          {
-              jQuery('.nameBar').removeClass('nameHome');
-              jQuery('.nameBar').removeClass('nameAbout');
-              jQuery('.nameBar').removeClass('nameSkills');
-              jQuery('.nameBar').removeClass('nameContact');
           }
 
 
