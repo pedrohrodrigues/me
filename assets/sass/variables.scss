@@ -1,0 +1,23 @@
+$mainYellow:#ffbc00;
+
+
+@mixin rotatePositionY($firstDegrees,$secondDegrees) {
+    -webkit-transform: translateZ( $firstDegrees ) rotateY( $secondDegrees);
+            transform: translateZ( $firstDegrees ) rotateY( $secondDegrees);
+}
+
+@mixin rotatePositionX($firstDegrees,$secondDegrees) {
+    -webkit-transform: translateZ( $firstDegrees ) rotateX( $secondDegrees);
+            transform: translateZ( $firstDegrees ) rotateX( $secondDegrees);
+}
+
+@mixin rotateZPositionY($firstDegrees,$secondDegrees) {
+    -webkit-transform: rotateY( $firstDegrees ) translateZ( $secondDegrees );
+            transform: rotateY( $firstDegrees ) translateZ( $secondDegrees );
+}
+
+@mixin rotateZPositionX($firstDegrees,$secondDegrees) {
+    -webkit-transform: rotateX( $firstDegrees ) translateZ( $secondDegrees );
+            transform: rotateX( $firstDegrees ) translateZ( $secondDegrees );
+}
+

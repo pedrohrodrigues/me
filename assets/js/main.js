@@ -1,8 +1,8 @@
           
           var itemsMenu = document.getElementsByClassName("itemMenu");
-          var classesRotate =['rotateHome','rotateAbout','rotateSkills','rotateContact'];
-          var classesMenu =['menuHome','menuAbout','menuSkills','menuContact'];
-          var classesNameBar =['nameHome','nameAbout','nameSkills','nameContact'];
+          var classesRotate =['rotateAbout','rotateSkills','rotateContact','rotatePortfolio'];
+          var classesMenu =['menuAbout','menuSkills','menuContact','menuPortfolio'];
+          var classesNameBar =['nameAbout','nameSkills','nameContact','namePortfolio'];
           
           function changeMenu(menuSelecionado)
           {
