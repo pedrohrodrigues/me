@@ -77,9 +77,9 @@ p
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
 
-    border-bottom: 20px solid #ffbc00;
-    border-right: 20px solid #ffbc00;
-    border-top: 20px solid #ffbc00;
+    border-bottom: 20px solid $colorAbout;
+    border-right: 20px solid $colorAbout;
+    border-top: 20px solid $colorAbout;
     box-sizing: border-box;
     -webkit-transition: border 0.5s ease;
             transition: border 0.5s ease;
@@ -92,14 +92,14 @@ p
 
 .nameBar.nameSkills
 {
-    border:20px solid #373535;
+    border:20px solid $colorSkills;
     border-left:none;
 
 }
 
 .nameBar.nameContact
 {
-    border:20px solid #15af61;
+    border:20px solid $colorContact;
     border-left:none;
 }
 
@@ -335,7 +335,7 @@ p
 
 .contentContact
 {
-    background:#15af61;
+    background:$colorContact;
     color:#FFFFFF;
 }
 
@@ -350,7 +350,7 @@ p
 
 .contentAbout
 {
-    background:url('../images/ilustration-head.png') #ffbc00 bottom right no-repeat;
+    background:url('../images/ilustration-head.png') $colorAbout bottom right no-repeat;
     color:#FFFFFF;
 
 }
@@ -364,7 +364,7 @@ p
 
 .contentSkills
 {
-    background:#373535;
+    background:$colorSkills;
     color:#FFFFFF;
     flex-wrap:wrap;
 }
@@ -443,6 +443,14 @@ p
     right:0;
     top:0;
 }
+
+
+.contentPortfolio
+{
+    background:#0E6EC6;
+    color:#FFFFFF;
+}
+
 
 .imageBackgroundSkill
 {
@@ -563,7 +571,7 @@ p
     -webkit-box-align:center;
         -ms-flex-align:center;
             align-items:center;
-    border:3px solid #ffce09;
+    border:3px solid $colorAbout;
     box-sizing:border-box;
     cursor:pointer;
     -webkit-box-pack:center;
@@ -582,12 +590,17 @@ p
 
 .mainMenu.menuSkills .itemMenu
 {
-    border:3px solid #373535;
+    border:3px solid $colorSkills;
 }
 
 .mainMenu.menuContact .itemMenu
 {
-    border:3px solid #15af61;
+    border:3px solid $colorContact;
+}
+
+.mainMenu.menuPortfolio .itemMenu
+{
+    border:3px solid #0E6EC6;
 }
 
 .itemMenu i
@@ -607,17 +620,22 @@ p
 
 .mainMenu .itemMenu:hover
 {
-    border:3px solid #ffce09;
+    border:3px solid $colorAbout;
 }
 
 .itemMenu.menuLiSkill:hover
  {
-     border:3px solid #373535;
+     border:3px solid $colorSkills;
  }
 
 .itemMenu.menuLiContact:hover
 {
-    border:3px solid #15af61;
+    border:3px solid $colorContact;
+}
+
+.itemMenu.menuLiPortfolio:hover
+{
+    border:3px solid #0E6EC6;
 }
 
 .itemMenu:hover i
@@ -651,37 +669,53 @@ p
 
 .itemMenuTitle .lineDot .line
 {
-    background:#ffbc00;
+    background:$colorAbout;
 }
 
 .itemMenuTitle .lineDot .dot
 {
-    background:#ffbc00;
+    background:$colorAbout;
 }
 
 .menuLiSkill .itemMenuTitle .lineDot .line, .menuLiSkill .itemMenuTitle .lineDot .dot
 {
-    background:#373535;
+    background:$colorSkills;
 }
 
 .menuLiContact .itemMenuTitle .lineDot .line, .menuLiContact .itemMenuTitle .lineDot .dot
 {
-    background:#15af61;
+    background:$colorContact;
 }
 
+.menuLiPortfolio .itemMenuTitle .lineDot .line, .menuLiPortfolio .itemMenuTitle .lineDot .dot
+{
+    background:#0E6EC6;
+}
 
+.menuLiPortfolio .itemMenuTitle
+{
+    left: -125px;
+}
 
+.menuLiPortfolio  .itemMenuTitle .lineDot
+{
+    right: -90px;
+}
 
 
 .aboutMenuTitle, .homeMenuTitle
 {
-    border: 1px solid #ffbc00;
+    border: 1px solid $colorAbout;
 }
 
+.portfolioMenuTitle
+{
+    border: 1px solid #0E6EC6;
+}
 
 .skillsMenuTitle
 {
-    border: 1px solid #373535;
+    border: 1px solid $colorSkills;
 }
 
 .itemMenuTitle.contactMenuTitle .lineDot
@@ -691,7 +725,7 @@ p
 
 .contactMenuTitle.itemMenuTitle
 {
-    border: 1px solid #15af61;
+    border: 1px solid $colorContact;
     left: -133px;
 }
 
@@ -774,9 +808,9 @@ html
 }
 
 .nameBar {
-   border-bottom: 15px solid #ffbc00;
-   border-left: 15px solid #ffbc00;
-   border-right: 15px solid #ffbc00;
+   border-bottom: 15px solid $colorAbout;
+   border-left: 15px solid $colorAbout;
+   border-right: 15px solid $colorAbout;
    box-sizing: border-box;
    display:-webkit-box;
    display:-ms-flexbox;
@@ -809,13 +843,17 @@ html
 
 
 .nameBar.nameSkills {
-    border: 20px solid #373535;
+    border: 20px solid $colorSkills;
 }
 
 .nameBar.nameContact {
-    border: 20px solid #15af61;
+    border: 20px solid $colorContact;
 }
 
+.nameBar.namePortfolio
+{
+   border: 20px solid #0E6EC6; 
+}
 
  }
 
